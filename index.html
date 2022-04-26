@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THỰC HÀNH TUẦN 10</title>
+    <title>DANH SÁCH ĐỘI TUYỂN VIỆT NAM</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
 </head>
@@ -58,33 +58,33 @@
                     <form>
                         <div class="form-group">
                             <label>Họ tên</label>
-                            <input type="text" class="form-control"aria-describedby="codeHelp" placeholder="Nhập họ tên">
-                            <span id="error_name" class="text-danger">*</span>
+                            <input type="text" class="form-control" id="txtName" aria-describedby="codeHelp" placeholder="Nhập họ tên">
+                            <span id="errName" class="text-danger">*</span>
                         </div>
                         <div class="form-group">
                             <label>Số áo</label>
-                            <input type="text" class="form-control"placeholder="Nhập số áo đội tuyển">
-                            <span id="error_province" class="text-danger">*</span>
+                            <input type="text" class="form-control" id="txtNum" placeholder="Nhập số áo đội tuyển">
+                            <span id="errNum" class="text-danger">*</span>
                         </div>
                         <div class="form-group">
                             <label>Câu lạc bộ</label>
-                            <input type="email" class="form-control"placeholder="Câu lạc bộ của bạn">
-                            <span id="error_email" class="text-danger">*</span>
+                            <input type="text" class="form-control" id="txtClb" placeholder="Câu lạc bộ của bạn">
+                            <span id="errClb" class="text-danger">*</span>
                         </div>
                         <div class="form-group">
                             <label>Ngày tập trung</label>
-                            <input type="date" class="form-control"placeholder="mm/dd/yyyy">
-                            <span id="error_email" class="text-danger">*</span>
+                            <input type="date" class="form-control" id="txtDate" placeholder="mm/dd/yyyy">
+                            <span id="errDate" class="text-danger">*</span>
                         </div>
                         <div class="form-group">
                             <label>Số điện thoại</label>
-                            <input type="text" class="form-control" placeholder="0XX-XXX-XXXX">
-                            <span id="error_phone" class="text-danger">*</span>
+                            <input type="text" class="form-control"  id="txtPhone" placeholder="0XX-XXX-XXXX">
+                            <span id="errPhone" class="text-danger">*</span>
                         </div>
                         <div class="form-group">
                             <label>Ảnh đại diện</label>
-                            <input type="file" class="form-control" >
-                            <span id="error_image" class="text-danger">*</span>
+                            <input type="file" class="form-control" id="txtImage">
+                            <span id="errImage" class="text-danger">*</span>
                         </div>
                         <button type="button" id="btnSave" class="btn btn-primary">Lưu</button>
                         <span id="message"></span>
@@ -99,8 +99,7 @@
         <div class="row">
             <div class="col-md-12">
                 <section class="table-responsive">
-                    <caption><h3>DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN</h3></caption>
-                    <caption><h3>TRƯỜNG DHCN THÀNH PHỐ HỒ CHÍ MINH</h3></caption>
+                    <caption><h3>DANH SÁCH ĐỘI TUYỂN VIỆT NAM</h3></caption>
                     <table id="myTable" class="table table-striped">
                         <thead>
                             <tr>
